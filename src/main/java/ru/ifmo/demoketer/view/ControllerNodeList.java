@@ -4,6 +4,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.MenuItem;
+import ru.ifmo.demoketer.Main;
 import ru.ifmo.demoketer.model.MainNode;
 
 
@@ -34,7 +35,7 @@ public class ControllerNodeList {
         outputNode.setCellValueFactory(cellData -> cellData.getValue().nodeOutputProperty());
     }
 
-    public void setMainApp(ru.ifmo.demoketer.Main main) {
+    public void setMainApp(Main main) {
         this.main = main;
 
         nodeTable.setItems(main.getNodeData());

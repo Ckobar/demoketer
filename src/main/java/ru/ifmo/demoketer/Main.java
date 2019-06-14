@@ -26,31 +26,57 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 import ru.ifmo.demoketer.model.MainNode;
+import ru.ifmo.demoketer.view.ControllerNodeList;
 
 public class Main extends Application {
 
     private ObservableList<String> nodeList = FXCollections.observableArrayList();
     private ObservableList<MainNode> nodeData = FXCollections.observableArrayList();
 
-    @Override
-    public void start(Stage primaryStage) throws Exception{
+    private Stage primaryStage;
+    private BorderPane root;
+
+    public Main(){
         nodeData.add(new MainNode("sortNode", "Sorting file rows", "sortedNodeIn.txt","sortedNodeOut.txt"));
         nodeData.add(new MainNode("countRowsNode", "Counting file rows", "countRowsNodeIn.txt","countRowsNodeOut.txt"));
         nodeData.add(new MainNode("uniqueWordNode", "Find unique file rows", "uniqueWordNodeIn.txt","uniqueWordNodeOut.txt"));
         nodeData.add(new MainNode("filterNode", "Filtering file rows by RegExp", "filterNodeIn.txt","filterNodeOut.txt"));
-
         for (MainNode mainNode : nodeData) {
             nodeList.add(mainNode.getNodeName());
         }
+    }
 
-        URL resource = getClass().getResource("/sample.fxml");
-        Parent root = FXMLLoader.load(resource);
-        primaryStage.setTitle("Keter");
-        primaryStage.setScene(new Scene(root, 1000, 500));
-        primaryStage.setResizable(false);
-        primaryStage.show();
+    @Override
+    public void start(Stage primaryStage) throws Exception{
+
+        this.primaryStage = primaryStage;
+        this.primaryStage.setTitle("Keter");
+        //this.primaryStage.setScene(new Scene(root, 1000, 500));
+        this.primaryStage.setResizable(false);
+
+        initRootLayout();
+        showNodeData();
+
+        //this.primaryStage.show();
+    }
+
+    public void initRootLayout() {
+        try {
+
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(Main.class.getResource("/rootLayout.fxml"));
+            root = loader.load();
+
+            Scene scene = new Scene(root);
+            primaryStage.setScene(scene);
+            primaryStage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     public ObservableList<MainNode> getNodeData() {
@@ -59,6 +85,25 @@ public class Main extends Application {
 
     public ObservableList<String> getNodeList() {
         return nodeList;
+    }
+
+    public Stage getPrimaryStage() {
+        return primaryStage;
+    }
+
+    public void showNodeData() {
+        try {
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(Main.class.getResource("/sample.fxml"));
+            AnchorPane nodeOverview = (AnchorPane) loader.load();
+
+            root.setCenter(nodeOverview);
+
+            ControllerNodeList controller = loader.getController();
+            controller.setMainApp(this);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
 
