@@ -45,7 +45,7 @@ public class Main extends Application {
             nodeList.add(mainNode.getNodeName());
         }
 
-        URL resource = getClass().getResource("resources/sample.fxml");
+        URL resource = getClass().getResource("/sample.fxml");
         Parent root = FXMLLoader.load(resource);
         primaryStage.setTitle("Keter");
         primaryStage.setScene(new Scene(root, 1000, 500));
