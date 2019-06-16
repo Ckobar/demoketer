@@ -1,0 +1,1 @@
+{"graphName":"33","graphDescription":"4423","listOfNodes":[{"nodeName":"sortNode","nodeDescription":"Sorting file rows","nodeInput":["sortedNodeIn.txt"],"nodeOutput":"sortedNodeOut.txt","nodeFullDescription":"Полное описание ноды sortNode","nodeExample":"пример запуска ноды sortNode","typeKeter":"node","uuidNode":"fdefb34e-caa1-41af-beef-11cd25e1fd69"}]}
