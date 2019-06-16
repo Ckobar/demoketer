@@ -19,6 +19,7 @@ import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class ControllerGraphCreate {
@@ -43,6 +44,10 @@ public class ControllerGraphCreate {
     private TextField graphName;
     @FXML
     private TextField graphDescription;
+    @FXML
+    private TextField graphInputParam;
+    @FXML
+    private TextArea addedNodeList = new TextArea("");
 
     private ru.ifmo.demoketer.Main main;
 
@@ -105,18 +110,51 @@ public class ControllerGraphCreate {
         dialogStage.close();
     }
 
+    private void alertNotFNode(){
+        Alert alert = new Alert(Alert.AlertType.WARNING);
+        alert.initOwner(main.getPrimaryStage());
+        alert.setTitle("Error");
+        alert.setHeaderText("No node selected");
+        alert.setHeaderText("Need to add a node");
+        alert.showAndWait();
+    }
+
     @FXML
     private void handleAddNode() {
+        if(nodeTableGr.getSelectionModel().getSelectedItem()==null) {
+            alertNotFNode();
+            return;
+        }
         MainNode mainNode = nodeTableGr.getSelectionModel().getSelectedItem();
         lisfOfNodes.add(mainNode);
+        addedNodeList.setText(addedNodeList.getText() + " -> " + nodeTableGr.getSelectionModel().getSelectedItem().getNodeName());
     }
 
     @FXML
     private void handleSaveGraph() {
+        if(lisfOfNodes.isEmpty()) {
+            alertNotFNode();
+            return;
+        }
+
+        if(graphName.getText().isEmpty() || graphInputParam.getText().isEmpty()){
+            Alert alert = new Alert(Alert.AlertType.WARNING);
+            alert.initOwner(main.getPrimaryStage());
+            alert.setTitle("Error");
+            alert.setHeaderText("Mame or input param is empty");
+            alert.showAndWait();
+            return;
+        }
+
+        List<String> tempList = Arrays.asList(graphInputParam.getText().split("\\s*,\\s*"));
+        MainNode newTempMainNode = lisfOfNodes.get(lisfOfNodes.size()-1);
+        newTempMainNode.setNodeInput(tempList);
+        lisfOfNodes.set(lisfOfNodes.size()-1, newTempMainNode);
+
         try {
         mainGraph = new MainGraph(graphName.getText(), graphDescription.getText(), lisfOfNodes);
-        String fileName = graphName + ".graphketer";
-        ObjectMapper mapper = new ObjectMapper();
+            String fileName = graphName.getText() + ".graphketer";
+            ObjectMapper mapper = new ObjectMapper();
 
             BufferedWriter bw = new BufferedWriter(new FileWriter(fileName));
             bw.write(mapper.writeValueAsString(mainGraph));
@@ -127,5 +165,10 @@ public class ControllerGraphCreate {
         catch (IOException ioEx){
             System.out.println("WTF");
         }
+
+        lisfOfNodes = null;
+        addedNodeList.setText("");
+        okClicked = true;
+        dialogStage.close();
     }
 }

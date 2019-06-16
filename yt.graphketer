@@ -1,0 +1,1 @@
+{"graphName":"yt","graphDescription":"ty","listOfNodes":[{"nodeName":"countRowsNode","nodeDescription":"Counting file rows","nodeInput":["tt"],"nodeOutput":"countRowsNodeOut.txt","nodeFullDescription":"Полное описание ноды countRowsNode","nodeExample":"пример запуска ноды countRowsNode","typeKeter":"node","uuidNode":"a0a1dad6-1388-44b8-bc11-08d7217fb414"}]}

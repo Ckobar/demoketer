@@ -103,7 +103,7 @@
                                                 </AnchorPane>
                                                 <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
                                                    <children>
-                                                      <TextField layoutX="130.0" layoutY="5.0" prefHeight="34.4" prefWidth="716.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="5.0" />
+                                                      <TextField fx:id="graphInputParam" layoutX="130.0" layoutY="5.0" prefHeight="34.4" prefWidth="716.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="5.0" />
                                                    </children>
                                                 </AnchorPane>
                                                 <Label fx:id="selectInputParamNode" prefHeight="34.0" prefWidth="335.0" text="NodeIn" GridPane.columnIndex="1">
@@ -202,7 +202,7 @@
                                                 </Label>
                                                 <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
                                                    <children>
-                                                      <TextArea editable="false" prefHeight="311.2" prefWidth="860.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                      <TextArea fx:id="addedNodeList" editable="false" prefHeight="311.2" prefWidth="860.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
                                                    </children>
                                                 </AnchorPane>
                                              </children>

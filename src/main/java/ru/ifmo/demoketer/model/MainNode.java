@@ -95,7 +95,7 @@ public class MainNode implements Node {
         return nodeOutput;
     }
 
-    public void setNodeInput(ArrayList<String> nodeInput) {
+    public void setNodeInput(List<String> nodeInput) {
         this.nodeInput.set(nodeInput);
     }
 
