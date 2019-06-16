@@ -19,6 +19,9 @@ package ru.ifmo.demoketer;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.Arrays;
+
 import javafx.application.Application;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -43,16 +46,21 @@ public class Main extends Application {
     private BorderPane root;
 
     public Main(){
-        nodeData.add(new MainNode("sortNode", "Sorting file rows", "sortedNodeIn.txt",
+
+        nodeData.add(new MainNode("sortNode", "Sorting file rows",
+                new ArrayList<String>(Arrays.asList("sortedNodeIn.txt")),
                 "sortedNodeOut.txt", "Полное описание ноды sortNode",
-                "пример запуска нодыsortNode", "node"));
-        nodeData.add(new MainNode("countRowsNode", "Counting file rows", "countRowsNodeIn.txt",
+                "пример запуска ноды sortNode", "node"));
+        nodeData.add(new MainNode("countRowsNode", "Counting file rows",
+                new ArrayList<String>(Arrays.asList("countRowsNodeIn.txt")),
                 "countRowsNodeOut.txt", "Полное описание ноды countRowsNode",
                 "пример запуска ноды countRowsNode", "node"));
-        nodeData.add(new MainNode("uniqueWordNode", "Find unique file rows", "uniqueWordNodeIn.txt",
+        nodeData.add(new MainNode("uniqueWordNode", "Find unique file rows",
+                new ArrayList<String>(Arrays.asList("uniqueWordNodeIn.txt")),
                 "uniqueWordNodeOut.txt", "Полное описание ноды uniqueWordNode",
                 "пример запуска ноды uniqueWordNode", "node"));
-        nodeData.add(new MainNode("filterNode", "Filtering file rows by RegExp", "filterNodeIn.txt",
+        nodeData.add(new MainNode("filterNode", "Filtering file rows by RegExp",
+                new ArrayList<String>(Arrays.asList("filterNodeIn.txt", "RegExp")),
                 "filterNodeOut.txt", "Полное описание ноды filterNode",
                 "пример запуска ноды filterNode", "node" ));
         for (MainNode mainNode : nodeData) {
@@ -133,7 +141,6 @@ public class Main extends Application {
             Scene scene = new Scene(page);
             dialogStage.setScene(scene);
 
-            // Передаём адресата в контроллер.
             ControllerGraphCreate controller = loader.getController();
             controller.setDialogStage(dialogStage);
             ///controller.setPerson(person);

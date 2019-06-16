@@ -29,14 +29,11 @@ public class ControllerNodeList {
 
     private ru.ifmo.demoketer.Main main;
 
-    public ControllerNodeList() {
-    }
-
     @FXML
     private void initialize() {
         nameNode.setCellValueFactory(cellData -> cellData.getValue().nodeNameProperty());
         descriptionNode.setCellValueFactory(cellData -> cellData.getValue().nodeDescriptionProperty());
-        inputNode.setCellValueFactory(cellData -> cellData.getValue().nodeInputProperty());
+        inputNode.setCellValueFactory(cellData -> cellData.getValue().nodeInputProperty().asString());
         outputNode.setCellValueFactory(cellData -> cellData.getValue().nodeOutputProperty());
 
         nameNode.setCellValueFactory(
@@ -44,7 +41,7 @@ public class ControllerNodeList {
         descriptionNode.setCellValueFactory(
                 cellData -> cellData.getValue().nodeDescriptionProperty());
         inputNode.setCellValueFactory(
-                cellData -> cellData.getValue().nodeInputProperty());
+                cellData -> cellData.getValue().nodeInputProperty().asString());
         outputNode.setCellValueFactory(
                 cellData -> cellData.getValue().nodeOutputProperty());
 

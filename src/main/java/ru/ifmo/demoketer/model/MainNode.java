@@ -14,21 +14,25 @@ public class MainNode implements Node {
 
     private StringProperty nodeName;
     private StringProperty nodeDescription;
-    private StringProperty nodeInput;
+    private SimpleObjectProperty<List<String>> nodeInput;
     private StringProperty nodeOutput;
     private StringProperty nodeFullDescription;
     private StringProperty nodeExample;
     private StringProperty typeKeter;
+    private UUID uuidNode = UUID.randomUUID();
 
-    public MainNode(String nodeName, String nodeDescription, String nodeInput, String nodeOutput,
+    public MainNode(String nodeName, String nodeDescription, List<String> nodeInput, String nodeOutput,
                     String nodeFullDescription, String nodeExample, String typeKeter) {
         this.nodeName = new SimpleStringProperty(nodeName);
         this.nodeDescription = new SimpleStringProperty(nodeDescription);
-        this.nodeInput = new SimpleStringProperty(nodeInput);
+        this.nodeInput = new SimpleObjectProperty<>(nodeInput);
         this.nodeOutput = new SimpleStringProperty(nodeOutput);
         this.nodeFullDescription = new SimpleStringProperty(nodeFullDescription);
         this.nodeExample = new SimpleStringProperty(nodeExample);
         this.typeKeter = new SimpleStringProperty(typeKeter);
+    }
+
+    public MainNode() {
     }
 
     public void setNodeFullDescription(String nodeFullDescription) {
@@ -63,10 +67,6 @@ public class MainNode implements Node {
         this.nodeDescription.set(nodeDescription);
     }
 
-    public void setNodeInput(String nodeInput) {
-        this.nodeInput.set(nodeInput);
-    }
-
     public void setNodeOutput(String nodeOutput) {
         this.nodeOutput.set(nodeOutput);
     }
@@ -87,20 +87,40 @@ public class MainNode implements Node {
         return nodeDescription;
     }
 
-    public String getNodeInput() {
-        return nodeInput.get();
-    }
-
-    public StringProperty nodeInputProperty() {
-        return nodeInput;
-    }
-
     public String getNodeOutput() {
         return nodeOutput.get();
     }
 
     public StringProperty nodeOutputProperty() {
         return nodeOutput;
+    }
+
+    public void setNodeInput(ArrayList<String> nodeInput) {
+        this.nodeInput.set(nodeInput);
+    }
+
+    public void setTypeKeter(String typeKeter) {
+        this.typeKeter.set(typeKeter);
+    }
+
+    public List<String> getNodeInput() {
+        return nodeInput.get();
+    }
+
+    public SimpleObjectProperty<List<String>> nodeInputProperty() {
+        return nodeInput;
+    }
+
+    public String getTypeKeter() {
+        return typeKeter.get();
+    }
+
+    public StringProperty typeKeterProperty() {
+        return typeKeter;
+    }
+
+    public UUID getUuidNode() {
+        return uuidNode;
     }
 
     @Override
