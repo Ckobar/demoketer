@@ -1,14 +1,19 @@
 package ru.ifmo.demoketer.view;
 
 import javafx.fxml.FXML;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
-import javafx.scene.control.MenuItem;
+import javafx.scene.control.*;
 import ru.ifmo.demoketer.Main;
 import ru.ifmo.demoketer.model.MainNode;
 
 
 public class ControllerNodeList {
+    @FXML
+    private Label nodeNameList;
+    @FXML
+    private TextArea descriptionNodeList;
+    @FXML
+    private TextArea exampleNodeList;
+
     @FXML
     private MenuItem nodeList;
     @FXML
@@ -33,11 +38,36 @@ public class ControllerNodeList {
         descriptionNode.setCellValueFactory(cellData -> cellData.getValue().nodeDescriptionProperty());
         inputNode.setCellValueFactory(cellData -> cellData.getValue().nodeInputProperty());
         outputNode.setCellValueFactory(cellData -> cellData.getValue().nodeOutputProperty());
+
+        nameNode.setCellValueFactory(
+                cellData -> cellData.getValue().nodeNameProperty());
+        descriptionNode.setCellValueFactory(
+                cellData -> cellData.getValue().nodeDescriptionProperty());
+        inputNode.setCellValueFactory(
+                cellData -> cellData.getValue().nodeInputProperty());
+        outputNode.setCellValueFactory(
+                cellData -> cellData.getValue().nodeOutputProperty());
+
+        showNodeDetails(null);
+
+        nodeTable.getSelectionModel().selectedItemProperty().addListener(
+                (observable, oldValue, newValue) -> showNodeDetails(newValue));
+    }
+
+    private void showNodeDetails(MainNode mainNode) {
+        if (mainNode != null) {
+            nodeNameList.setText(mainNode.getNodeName());
+            descriptionNodeList.setText(mainNode.getNodeFullDescription());
+            exampleNodeList.setText(mainNode.getNodeExample());
+        } else {
+            nodeNameList.setText("");
+            descriptionNodeList.setText("");
+            exampleNodeList.setText("");
+        }
     }
 
     public void setMainApp(Main main) {
         this.main = main;
-
         nodeTable.setItems(main.getNodeData());
     }
 }

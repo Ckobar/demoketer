@@ -41,10 +41,14 @@ public class Main extends Application {
     private BorderPane root;
 
     public Main(){
-        nodeData.add(new MainNode("sortNode", "Sorting file rows", "sortedNodeIn.txt","sortedNodeOut.txt"));
-        nodeData.add(new MainNode("countRowsNode", "Counting file rows", "countRowsNodeIn.txt","countRowsNodeOut.txt"));
-        nodeData.add(new MainNode("uniqueWordNode", "Find unique file rows", "uniqueWordNodeIn.txt","uniqueWordNodeOut.txt"));
-        nodeData.add(new MainNode("filterNode", "Filtering file rows by RegExp", "filterNodeIn.txt","filterNodeOut.txt"));
+        nodeData.add(new MainNode("sortNode", "Sorting file rows", "sortedNodeIn.txt",
+                "sortedNodeOut.txt", "Полное описание ноды sortNode", "пример запуска нодыsortNode"));
+        nodeData.add(new MainNode("countRowsNode", "Counting file rows", "countRowsNodeIn.txt",
+                "countRowsNodeOut.txt", "Полное описание ноды countRowsNode", "пример запуска ноды countRowsNode"));
+        nodeData.add(new MainNode("uniqueWordNode", "Find unique file rows", "uniqueWordNodeIn.txt",
+                "uniqueWordNodeOut.txt", "Полное описание ноды uniqueWordNode", "пример запуска ноды uniqueWordNode"));
+        nodeData.add(new MainNode("filterNode", "Filtering file rows by RegExp", "filterNodeIn.txt",
+                "filterNodeOut.txt", "Полное описание ноды filterNode", "пример запуска ноды filterNode" ));
         for (MainNode mainNode : nodeData) {
             nodeList.add(mainNode.getNodeName());
         }
@@ -55,7 +59,7 @@ public class Main extends Application {
 
         this.primaryStage = primaryStage;
         this.primaryStage.setTitle("Keter");
-        //this.primaryStage.setScene(new Scene(root, 1000, 500));
+        //this.primaryStage.setScene(new Scene(root, 1200, 600));
         this.primaryStage.setResizable(false);
 
         initRootLayout();
@@ -100,6 +104,7 @@ public class Main extends Application {
             root.setCenter(nodeOverview);
 
             ControllerNodeList controller = loader.getController();
+            controller.setMainApp(this);
             controller.setMainApp(this);
         } catch (IOException e) {
             e.printStackTrace();
