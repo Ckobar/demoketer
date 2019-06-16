@@ -18,14 +18,17 @@ public class MainNode implements Node {
     private StringProperty nodeOutput;
     private StringProperty nodeFullDescription;
     private StringProperty nodeExample;
+    private StringProperty typeKeter;
 
-    public MainNode(String nodeName, String nodeDescription, String nodeInput, String nodeOutput, String nodeFullDescription, String nodeExample) {
+    public MainNode(String nodeName, String nodeDescription, String nodeInput, String nodeOutput,
+                    String nodeFullDescription, String nodeExample, String typeKeter) {
         this.nodeName = new SimpleStringProperty(nodeName);
         this.nodeDescription = new SimpleStringProperty(nodeDescription);
         this.nodeInput = new SimpleStringProperty(nodeInput);
         this.nodeOutput = new SimpleStringProperty(nodeOutput);
         this.nodeFullDescription = new SimpleStringProperty(nodeFullDescription);
         this.nodeExample = new SimpleStringProperty(nodeExample);
+        this.typeKeter = new SimpleStringProperty(typeKeter);
     }
 
     public void setNodeFullDescription(String nodeFullDescription) {

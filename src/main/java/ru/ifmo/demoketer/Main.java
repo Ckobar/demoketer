@@ -28,8 +28,10 @@ import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 import ru.ifmo.demoketer.model.MainNode;
+import ru.ifmo.demoketer.view.ControllerGraphCreate;
 import ru.ifmo.demoketer.view.ControllerNodeList;
 
 public class Main extends Application {
@@ -42,13 +44,17 @@ public class Main extends Application {
 
     public Main(){
         nodeData.add(new MainNode("sortNode", "Sorting file rows", "sortedNodeIn.txt",
-                "sortedNodeOut.txt", "Полное описание ноды sortNode", "пример запуска нодыsortNode"));
+                "sortedNodeOut.txt", "Полное описание ноды sortNode",
+                "пример запуска нодыsortNode", "node"));
         nodeData.add(new MainNode("countRowsNode", "Counting file rows", "countRowsNodeIn.txt",
-                "countRowsNodeOut.txt", "Полное описание ноды countRowsNode", "пример запуска ноды countRowsNode"));
+                "countRowsNodeOut.txt", "Полное описание ноды countRowsNode",
+                "пример запуска ноды countRowsNode", "node"));
         nodeData.add(new MainNode("uniqueWordNode", "Find unique file rows", "uniqueWordNodeIn.txt",
-                "uniqueWordNodeOut.txt", "Полное описание ноды uniqueWordNode", "пример запуска ноды uniqueWordNode"));
+                "uniqueWordNodeOut.txt", "Полное описание ноды uniqueWordNode",
+                "пример запуска ноды uniqueWordNode", "node"));
         nodeData.add(new MainNode("filterNode", "Filtering file rows by RegExp", "filterNodeIn.txt",
-                "filterNodeOut.txt", "Полное описание ноды filterNode", "пример запуска ноды filterNode" ));
+                "filterNodeOut.txt", "Полное описание ноды filterNode",
+                "пример запуска ноды filterNode", "node" ));
         for (MainNode mainNode : nodeData) {
             nodeList.add(mainNode.getNodeName());
         }
@@ -104,14 +110,44 @@ public class Main extends Application {
             root.setCenter(nodeOverview);
 
             ControllerNodeList controller = loader.getController();
-            controller.setMainApp(this);
+            //controller.setMainApp(this);
             controller.setMainApp(this);
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
+    public boolean createGraph() {
+        try {
+            // Загружаем fxml-файл и создаём новую сцену
+            // для всплывающего диалогового окна.
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(Main.class.getResource("/createGraph.fxml"));
+            AnchorPane page = (AnchorPane) loader.load();
 
+            // Создаём диалоговое окно Stage.
+            Stage dialogStage = new Stage();
+            dialogStage.initModality(Modality.WINDOW_MODAL);
+            dialogStage.initOwner(primaryStage);
+            dialogStage.setTitle("Create graph");
+            Scene scene = new Scene(page);
+            dialogStage.setScene(scene);
+
+            // Передаём адресата в контроллер.
+            ControllerGraphCreate controller = loader.getController();
+            controller.setDialogStage(dialogStage);
+            ///controller.setPerson(person);
+
+            // Отображаем диалоговое окно и ждём, пока пользователь его не закроет
+            controller.setMainApp(this);
+            dialogStage.showAndWait();
+
+            return controller.isOkClicked();
+        } catch (IOException e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
 
 
     public static void main(String[] args) {

@@ -66,6 +66,11 @@ public class ControllerNodeList {
         }
     }
 
+    @FXML
+    private void handleCreateGraph() {
+        main.createGraph();
+    }
+
     public void setMainApp(Main main) {
         this.main = main;
         nodeTable.setItems(main.getNodeData());
