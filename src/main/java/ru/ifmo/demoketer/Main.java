@@ -36,6 +36,7 @@ import javafx.stage.Stage;
 import ru.ifmo.demoketer.model.MainNode;
 import ru.ifmo.demoketer.view.ControllerGraphCreate;
 import ru.ifmo.demoketer.view.ControllerNodeList;
+import ru.ifmo.demoketer.view.ControllerNodeRun;
 
 public class Main extends Application {
 
@@ -146,6 +147,32 @@ public class Main extends Application {
             ///controller.setPerson(person);
 
             // Отображаем диалоговое окно и ждём, пока пользователь его не закроет
+            controller.setMainApp(this);
+            dialogStage.showAndWait();
+
+            return controller.isOkClicked();
+        } catch (IOException e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
+
+    public boolean runNode() {
+        try {
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(Main.class.getResource("/runNode.fxml"));
+            AnchorPane page = (AnchorPane) loader.load();
+
+            Stage dialogStage = new Stage();
+            dialogStage.initModality(Modality.WINDOW_MODAL);
+            dialogStage.initOwner(primaryStage);
+            dialogStage.setTitle("Run node");
+            Scene scene = new Scene(page);
+            dialogStage.setScene(scene);
+
+            ControllerNodeRun controller = loader.getController();
+            controller.setDialogStage(dialogStage);
+
             controller.setMainApp(this);
             dialogStage.showAndWait();
 

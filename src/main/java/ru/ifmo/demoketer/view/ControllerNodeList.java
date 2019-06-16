@@ -15,8 +15,6 @@ public class ControllerNodeList {
     private TextArea exampleNodeList;
 
     @FXML
-    private MenuItem nodeList;
-    @FXML
     private TableView<MainNode> nodeTable;
     @FXML
     private TableColumn<MainNode, String> nameNode;
@@ -71,5 +69,13 @@ public class ControllerNodeList {
     public void setMainApp(Main main) {
         this.main = main;
         nodeTable.setItems(main.getNodeData());
+    }
+
+    @FXML void runNode(){
+        main.runNode();
+    }
+
+    @FXML void runGraph(){
+
     }
 }

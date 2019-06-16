@@ -1,1 +1,0 @@
-{"graphName":"R","graphDescription":"R","listOfNodes":[{"nodeName":"countRowsNode","nodeDescription":"Counting file rows","nodeInput":["countRowsNodeIn.txt"],"nodeOutput":"countRowsNodeOut.txt","nodeFullDescription":"Полное описание ноды countRowsNode","nodeExample":"пример запуска ноды countRowsNode","typeKeter":"node","uuidNode":"b118d455-734b-4ed1-966c-46f08c630db1"}]}

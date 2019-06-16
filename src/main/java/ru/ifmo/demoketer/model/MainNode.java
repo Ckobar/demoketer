@@ -125,14 +125,17 @@ public class MainNode implements Node {
 
     @Override
     public String sortNode(String nodeFileIn, String nodeFileOut) {
+        String out="";
         ArrayList<String> arrayList = new ArrayList<>();
         try{
             FileInputStream inStream = new FileInputStream(nodeFileIn);
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inStream));
             String strLine;
 
+            out+="Данные файла: \n";
             while((strLine = bufferedReader.readLine()) != null){
                 arrayList.add(strLine);
+                out+=strLine+"\n";
                 System.out.println(strLine);
             }
 
@@ -141,10 +144,12 @@ public class MainNode implements Node {
             System.out.println("--------");
 
             BufferedWriter bw = new BufferedWriter(new FileWriter(nodeFileOut));
+            out+="Выходные данные: \n";
             for(String counter: arrayList){
                 bw.write(counter);
                 bw.write("\r\n");
                 System.out.println(counter);
+                out+=counter + "\n";
             }
             bw.close();
 
@@ -152,39 +157,44 @@ public class MainNode implements Node {
         catch(IOException ioEx){
             System.out.println("WTF");
         }
-        return nodeFileOut;
+        return out;
     }
 
     @Override
     public String countRowsNode(String nodeFileIn, String nodeFileOut) {
-
+        String out="";
         int countRows = 0;
         try{
             FileInputStream inStream = new FileInputStream(nodeFileIn);
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inStream));
+            String strLine;
 
-            while(bufferedReader.readLine() != null){
+            out+="Данные файла: \n";
+            while((strLine = bufferedReader.readLine()) != null){
                 countRows++;
+                out+=strLine+"\n";
             }
             System.out.println(countRows);
             bufferedReader.close();
 
             System.out.println("--------");
 
+            out+="Выходные данные: \n";
             BufferedWriter bw = new BufferedWriter(new FileWriter(nodeFileOut));
             bw.write(String.valueOf(countRows));
+            out+=countRows;
             bw.close();
 
         }
         catch(IOException ioEx){
             System.out.println("WTF");
         }
-        return nodeFileOut;
+        return out;
     }
 
     @Override
     public String uniqueWordNode(String nodeFileIn, String nodeFileOut) {
-
+        String out="";
         HashSet<String> hashSet = new HashSet<>();
         HashMap<UUID, String> hashMap = new HashMap<>();
         try{
@@ -192,9 +202,11 @@ public class MainNode implements Node {
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inStream));
             String strLine;
 
+            out+="Данные файла: \n";
             while((strLine = bufferedReader.readLine()) != null){
                 hashSet.add(strLine);
                 System.out.println(strLine);
+                out+=strLine+"\n";
             }
 
             System.out.println("-----");
@@ -202,6 +214,7 @@ public class MainNode implements Node {
             bufferedReader.close();
 
             BufferedWriter bw = new BufferedWriter(new FileWriter(nodeFileOut));
+            out+="Выходные данные: \n";
             for(String counter : hashSet){
                 UUID uuid = UUID.randomUUID();
                 hashMap.put(uuid, counter);
@@ -210,6 +223,7 @@ public class MainNode implements Node {
                 bw.write(", ");
                 bw.write(counter);
                 bw.write("\r\n");
+                out+=uuid + " " + counter + "\n";
             }
 
             bw.close();
@@ -218,22 +232,25 @@ public class MainNode implements Node {
         catch(IOException ioEx){
             System.out.println("WTF");
         }
-        return nodeFileOut;
+        return out;
     }
 
 
     @Override
     public String filterNode(String nodeFileIn, String regExp, String nodeFileOut) {
+        String out="";
         ArrayList<String> arrayList = new ArrayList<>();
         try{
             FileInputStream inStream = new FileInputStream(nodeFileIn);
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inStream));
             String strLine;
 
+            out+="Данные файла: \n";
             while((strLine = bufferedReader.readLine()) != null){
                 if (strLine.matches(regExp)) {
                     arrayList.add(strLine);
                 }
+                out+=strLine+"\n";
                 System.out.println(strLine);
             }
 
@@ -242,10 +259,12 @@ public class MainNode implements Node {
             System.out.println("--------");
 
             BufferedWriter bw = new BufferedWriter(new FileWriter(nodeFileOut));
+            out+="Выходные данные: \n";
             for(String counter: arrayList){
                 bw.write(counter);
                 bw.write("\r\n");
                 System.out.println(counter);
+                out += counter + "\n";
             }
             bw.close();
 
@@ -253,7 +272,7 @@ public class MainNode implements Node {
         catch(IOException ioEx){
             System.out.println("WTF");
         }
-        return nodeFileOut;
+        return out;
     }
 
 }

@@ -1,1 +1,0 @@
-{"graphName":"bb","graphDescription":"nn","listOfNodes":[{"nodeName":"countRowsNode","nodeDescription":"Counting file rows","nodeInput":["nn"],"nodeOutput":"countRowsNodeOut.txt","nodeFullDescription":"Полное описание ноды countRowsNode","nodeExample":"пример запуска ноды countRowsNode","typeKeter":"node","uuidNode":"0e739e4a-bf50-4e9d-ae43-420d821e9c91"}]}

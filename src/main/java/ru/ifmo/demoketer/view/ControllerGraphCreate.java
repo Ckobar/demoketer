@@ -152,7 +152,7 @@ public class ControllerGraphCreate {
         lisfOfNodes.set(lisfOfNodes.size()-1, newTempMainNode);
 
         try {
-        mainGraph = new MainGraph(graphName.getText(), graphDescription.getText(), lisfOfNodes);
+        mainGraph = new MainGraph(graphName.getText(), graphDescription.getText(), "graph", lisfOfNodes);
             String fileName = graphName.getText() + ".graphketer";
             ObjectMapper mapper = new ObjectMapper();
 
