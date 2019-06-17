@@ -35,6 +35,7 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 import ru.ifmo.demoketer.model.MainNode;
 import ru.ifmo.demoketer.view.ControllerGraphCreate;
+import ru.ifmo.demoketer.view.ControllerGraphRun;
 import ru.ifmo.demoketer.view.ControllerNodeList;
 import ru.ifmo.demoketer.view.ControllerNodeRun;
 
@@ -50,20 +51,32 @@ public class Main extends Application {
 
         nodeData.add(new MainNode("sortNode", "Sorting file rows",
                 new ArrayList<String>(Arrays.asList("sortedNodeIn.txt")),
-                "sortedNodeOut.txt", "Полное описание ноды sortNode",
-                "пример запуска ноды sortNode", "node"));
+                "sortedNodeOut.txt",
+                "Полное описание ноды sortNode. " +
+                        "Входные данные (дефолтные): sortedNodeIn.txt. " +
+                        "Нода сортирует строки файла",
+                "пример запуска ноды sortNode: зайти во вкладку запуска, указать параметтры и запустить", "node"));
         nodeData.add(new MainNode("countRowsNode", "Counting file rows",
                 new ArrayList<String>(Arrays.asList("countRowsNodeIn.txt")),
-                "countRowsNodeOut.txt", "Полное описание ноды countRowsNode",
-                "пример запуска ноды countRowsNode", "node"));
+                "countRowsNodeOut.txt",
+                "Полное описание ноды countRowsNode" +
+                        "Входные данные (дефолтные): countRowsNodeIn.txt. " +
+                        "Нода считает кол-во строк файла",
+                "пример запуска ноды countRowsNode: зайти во вкладку запуска, указать параметтры и запустить", "node"));
         nodeData.add(new MainNode("uniqueWordNode", "Find unique file rows",
                 new ArrayList<String>(Arrays.asList("uniqueWordNodeIn.txt")),
-                "uniqueWordNodeOut.txt", "Полное описание ноды uniqueWordNode",
-                "пример запуска ноды uniqueWordNode", "node"));
-        nodeData.add(new MainNode("filterNode", "Filtering file rows by RegExp",
+                "uniqueWordNodeOut.txt",
+                "Полное описание ноды uniqueWordNode" +
+                        "Входные данные (дефолтные): uniqueWordNodeIn.txt. " +
+                        "Нода производит выборку уникальных записей строк файла и создаёт уникальный ключ для каждой строки.",
+                "пример запуска ноды uniqueWordNode: зайти во вкладку запуска, указать параметтры и запустить", "node"));
+        nodeData.add(new MainNode("filterNode", "Filtering file rows by RegExp.",
                 new ArrayList<String>(Arrays.asList("filterNodeIn.txt", "RegExp")),
-                "filterNodeOut.txt", "Полное описание ноды filterNode",
-                "пример запуска ноды filterNode", "node" ));
+                "filterNodeOut.txt",
+                "Полное описание ноды filterNode" +
+                        "Входные данные (дефолтные): filterNodeIn.txt, RegExp. " +
+                        "Нода производит фильтрацию строк файла на основании заданного RegExp",
+                "пример запуска ноды filterNode: зайти во вкладку запуска, указать параметтры и запустить", "node" ));
         for (MainNode mainNode : nodeData) {
             nodeList.add(mainNode.getNodeName());
         }
@@ -171,6 +184,32 @@ public class Main extends Application {
             dialogStage.setScene(scene);
 
             ControllerNodeRun controller = loader.getController();
+            controller.setDialogStage(dialogStage);
+
+            controller.setMainApp(this);
+            dialogStage.showAndWait();
+
+            return controller.isOkClicked();
+        } catch (IOException e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
+
+    public boolean runGraph() {
+        try {
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(Main.class.getResource("/runGraph.fxml"));
+            AnchorPane page = (AnchorPane) loader.load();
+
+            Stage dialogStage = new Stage();
+            dialogStage.initModality(Modality.WINDOW_MODAL);
+            dialogStage.initOwner(primaryStage);
+            dialogStage.setTitle("Run graph");
+            Scene scene = new Scene(page);
+            dialogStage.setScene(scene);
+
+            ControllerGraphRun controller = loader.getController();
             controller.setDialogStage(dialogStage);
 
             controller.setMainApp(this);

@@ -32,6 +32,18 @@ public class MainNode implements Node {
         this.typeKeter = new SimpleStringProperty(typeKeter);
     }
 
+    public MainNode(String nodeName, String nodeDescription, List<String> nodeInput, String nodeOutput,
+                    String nodeFullDescription, String nodeExample, String typeKeter, UUID uuidNode) {
+        this.nodeName = new SimpleStringProperty(nodeName);
+        this.nodeDescription = new SimpleStringProperty(nodeDescription);
+        this.nodeInput = new SimpleObjectProperty<>(nodeInput);
+        this.nodeOutput = new SimpleStringProperty(nodeOutput);
+        this.nodeFullDescription = new SimpleStringProperty(nodeFullDescription);
+        this.nodeExample = new SimpleStringProperty(nodeExample);
+        this.typeKeter = new SimpleStringProperty(typeKeter);
+        this.uuidNode = uuidNode;
+    }
+
     public MainNode() {
     }
 
@@ -99,6 +111,10 @@ public class MainNode implements Node {
         this.nodeInput.set(nodeInput);
     }
 
+    public void setUuidNode(UUID uuidNode) {
+        this.uuidNode = uuidNode;
+    }
+
     public void setTypeKeter(String typeKeter) {
         this.typeKeter.set(typeKeter);
     }
@@ -125,7 +141,7 @@ public class MainNode implements Node {
 
     @Override
     public String sortNode(String nodeFileIn, String nodeFileOut) {
-        String out="";
+        String out="Запускается sortNode...\n";
         ArrayList<String> arrayList = new ArrayList<>();
         try{
             FileInputStream inStream = new FileInputStream(nodeFileIn);
@@ -162,7 +178,7 @@ public class MainNode implements Node {
 
     @Override
     public String countRowsNode(String nodeFileIn, String nodeFileOut) {
-        String out="";
+        String out="Запускается countRowsNode...\n";
         int countRows = 0;
         try{
             FileInputStream inStream = new FileInputStream(nodeFileIn);
@@ -194,7 +210,7 @@ public class MainNode implements Node {
 
     @Override
     public String uniqueWordNode(String nodeFileIn, String nodeFileOut) {
-        String out="";
+        String out="Запускается uniqueWordNode...\n";
         HashSet<String> hashSet = new HashSet<>();
         HashMap<UUID, String> hashMap = new HashMap<>();
         try{
@@ -238,7 +254,7 @@ public class MainNode implements Node {
 
     @Override
     public String filterNode(String nodeFileIn, String regExp, String nodeFileOut) {
-        String out="";
+        String out="Запускается filterNode...\n";
         ArrayList<String> arrayList = new ArrayList<>();
         try{
             FileInputStream inStream = new FileInputStream(nodeFileIn);

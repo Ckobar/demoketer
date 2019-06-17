@@ -1,0 +1,1 @@
+{"graphName":"sort","graphDescription":"-","typeKeter":"graph","listOfNodes":[{"nodeName":"sortNode","nodeDescription":"Sorting file rows","nodeInput":["test.txt"],"nodeOutput":"tt.txt","nodeFullDescription":"Полное описание ноды sortNode","nodeExample":"пример запуска ноды sortNode","typeKeter":"node","uuidNode":"cd472f88-0d66-467a-8faa-e69e5228ba0f"}]}

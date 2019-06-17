@@ -1,0 +1,1 @@
+{"graphName":"0","graphDescription":"","typeKeter":"graph","listOfNodes":[{"nodeName":"filterNode","nodeDescription":"Filtering file rows by RegExp","nodeInput":["1"],"nodeOutput":"1","nodeFullDescription":"Полное описание ноды filterNode","nodeExample":"пример запуска ноды filterNode","typeKeter":"node","uuidNode":"91dd5e5e-eb79-48a0-82b4-bd384a14ffc0"}]}

@@ -47,6 +47,9 @@ public class ControllerGraphCreate {
     @FXML
     private TextField graphInputParam;
     @FXML
+    private TextField graphOutputParam;
+
+    @FXML
     private TextArea addedNodeList = new TextArea("");
 
     private ru.ifmo.demoketer.Main main;
@@ -110,22 +113,30 @@ public class ControllerGraphCreate {
         dialogStage.close();
     }
 
-    private void alertNotFNode(){
+    private void alertNotFNode(String alarm){
         Alert alert = new Alert(Alert.AlertType.WARNING);
         alert.initOwner(main.getPrimaryStage());
         alert.setTitle("Error");
-        alert.setHeaderText("No node selected");
-        alert.setHeaderText("Need to add a node");
+        alert.setHeaderText(alarm);
         alert.showAndWait();
     }
 
     @FXML
     private void handleAddNode() {
         if(nodeTableGr.getSelectionModel().getSelectedItem()==null) {
-            alertNotFNode();
+            alertNotFNode("No node selected\nNeed to add a node");
             return;
         }
+
+        if(graphInputParam.getText().isEmpty() || graphOutputParam.getText().isEmpty()){
+            alertNotFNode("Input or output params is empty");
+            return;
+        }
+
+        List<String> tempList = Arrays.asList(graphInputParam.getText().split("\\s*,\\s*"));
         MainNode mainNode = nodeTableGr.getSelectionModel().getSelectedItem();
+        mainNode.setNodeInput(tempList);
+        mainNode.setNodeOutput(graphOutputParam.getText());
         lisfOfNodes.add(mainNode);
         addedNodeList.setText(addedNodeList.getText() + " -> " + nodeTableGr.getSelectionModel().getSelectedItem().getNodeName());
     }
@@ -133,23 +144,14 @@ public class ControllerGraphCreate {
     @FXML
     private void handleSaveGraph() {
         if(lisfOfNodes.isEmpty()) {
-            alertNotFNode();
+            alertNotFNode("Node not selected ");
             return;
         }
 
-        if(graphName.getText().isEmpty() || graphInputParam.getText().isEmpty()){
-            Alert alert = new Alert(Alert.AlertType.WARNING);
-            alert.initOwner(main.getPrimaryStage());
-            alert.setTitle("Error");
-            alert.setHeaderText("Mame or input param is empty");
-            alert.showAndWait();
+        if(graphName.getText().isEmpty()){
+            alertNotFNode("Name graph is empty");
             return;
         }
-
-        List<String> tempList = Arrays.asList(graphInputParam.getText().split("\\s*,\\s*"));
-        MainNode newTempMainNode = lisfOfNodes.get(lisfOfNodes.size()-1);
-        newTempMainNode.setNodeInput(tempList);
-        lisfOfNodes.set(lisfOfNodes.size()-1, newTempMainNode);
 
         try {
         mainGraph = new MainGraph(graphName.getText(), graphDescription.getText(), "graph", lisfOfNodes);

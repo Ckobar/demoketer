@@ -94,12 +94,11 @@ public class ControllerNodeRun {
         dialogStage.close();
     }
 
-    private void alertNotFNode(){
+    private void alertNotFNode(String alarm){
         Alert alert = new Alert(Alert.AlertType.WARNING);
         alert.initOwner(main.getPrimaryStage());
         alert.setTitle("Error");
-        alert.setHeaderText("No node selected");
-        alert.setHeaderText("Need to add a node");
+        alert.setHeaderText(alarm);
         alert.showAndWait();
     }
 
@@ -108,7 +107,7 @@ public class ControllerNodeRun {
         resultRunNode.setText("");
 
         if(nodeTableR.getSelectionModel().getSelectedItem()==null) {
-            alertNotFNode();
+            alertNotFNode("Need select node");
             return;
         }
 
@@ -123,24 +122,24 @@ public class ControllerNodeRun {
 
         List<String> tempList = Arrays.asList(graphInputParamR.getText().split("\\s*,\\s*"));
 
-        MainNode newTempMainNode = nodeTableR.getSelectionModel().getSelectedItem();
-        if(newTempMainNode.getNodeName().equals("sortNode")){
-            resultRunNode.setText("Run sortNode. Input param: " + tempList.get(0) +
-                    "\nResult: \n" + newTempMainNode.sortNode(tempList.get(0), graphOutputParamR.getText()));
+        try {
+            MainNode newTempMainNode = nodeTableR.getSelectionModel().getSelectedItem();
+            if (newTempMainNode.getNodeName().equals("sortNode")) {
+                resultRunNode.setText("Run sortNode. Input param: " + tempList.get(0) +
+                        "\nResult: \n" + newTempMainNode.sortNode(tempList.get(0), graphOutputParamR.getText()));
+            } else if (newTempMainNode.getNodeName().equals("countRowsNode")) {
+                resultRunNode.setText("Run countRowsNode. Input param: " + tempList.get(0) +
+                        "\nResult: \n" + newTempMainNode.countRowsNode(tempList.get(0), graphOutputParamR.getText()));
+            } else if (newTempMainNode.getNodeName().equals("uniqueWordNode")) {
+                resultRunNode.setText("Run uniqueWordNode. Input param: " + tempList.get(0) +
+                        "\nResult: \n" + newTempMainNode.uniqueWordNode(tempList.get(0), graphOutputParamR.getText()));
+            } else if (newTempMainNode.getNodeName().equals("filterNode")) {
+                resultRunNode.setText("Run filterNode. Input param: " + tempList.get(0) + ", " + tempList.get(1) +
+                        "\nResult: \n" + newTempMainNode.filterNode(tempList.get(0), tempList.get(1), graphOutputParamR.getText()));
+            }
+        }catch (Exception e){
+            alertNotFNode("Error into the params");
         }
-        else if(newTempMainNode.getNodeName().equals("countRowsNode")){
-            resultRunNode.setText("Run countRowsNode. Input param: " + tempList.get(0) +
-                    "\nResult: \n" + newTempMainNode.countRowsNode(tempList.get(0), graphOutputParamR.getText()));
-        }
-        else if(newTempMainNode.getNodeName().equals("uniqueWordNode")){
-            resultRunNode.setText("Run uniqueWordNode. Input param: " + tempList.get(0) +
-                    "\nResult: \n" + newTempMainNode.uniqueWordNode(tempList.get(0), graphOutputParamR.getText()));
-        }
-        else if(newTempMainNode.getNodeName().equals("filterNode")){
-            resultRunNode.setText( "Run filterNode. Input param: " + tempList.get(0) +
-                    "\nResult: \n" + newTempMainNode.filterNode(tempList.get(0), tempList.get(1), graphOutputParamR.getText()));
-        }
-
 
 
         //okClicked = true;

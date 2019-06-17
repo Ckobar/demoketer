@@ -76,6 +76,6 @@ public class ControllerNodeList {
     }
 
     @FXML void runGraph(){
-
+        main.runGraph();
     }
 }
