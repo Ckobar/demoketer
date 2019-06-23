@@ -7,14 +7,73 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74900673-b252-4feb-987a-82ed78de363c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ifmo/demoketer/view/ControllerAuthorization.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/authorization.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0.graphketer" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1r" beforeDir="false" afterPath="$PROJECT_DIR$/1r" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2r" beforeDir="false" afterPath="$PROJECT_DIR$/2r" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gg.txt" beforeDir="false" afterPath="$PROJECT_DIR$/gg.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ggh.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ggh.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ggh2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ggh2.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/ifmo/demoketer/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/ifmo/demoketer/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/ifmo/demoketer/model/MainNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/ifmo/demoketer/model/MainNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/ifmo/demoketer/model/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/ifmo/demoketer/model/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/ifmo/demoketer/view/ControllerGraphCreate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/ifmo/demoketer/view/ControllerNodeRun.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/ifmo/demoketer/view/ControllerRoot.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/authorization.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/authorization.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/createGraph.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/createGraph.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/rootLayout.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/rootLayout.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/runGraph.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/runGraph.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/runNode.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/runNode.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sample.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DemoKeter/11" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DemoKeter/cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DemoKeter/classes/DarkTheme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DemoKeter/classes/createGraph.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DemoKeter/classes/rootLayout.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DemoKeter/classes/ru/ifmo/demoketer/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DemoKeter/classes/ru/ifmo/demoketer/model/MainGraph.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DemoKeter/classes/ru/ifmo/demoketer/model/MainNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DemoKeter/classes/ru/ifmo/demoketer/model/Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DemoKeter/classes/ru/ifmo/demoketer/view/ControllerGraphCreate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DemoKeter/classes/ru/ifmo/demoketer/view/ControllerGraphRun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DemoKeter/classes/ru/ifmo/demoketer/view/ControllerGraphRun.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DemoKeter/classes/ru/ifmo/demoketer/view/ControllerNodeList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DemoKeter/classes/ru/ifmo/demoketer/view/ControllerNodeRun.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DemoKeter/classes/ru/ifmo/demoketer/view/ControllerRoot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DemoKeter/classes/runGraph.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DemoKeter/classes/runNode.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DemoKeter/classes/sample.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DemoKeter/ff.graphketer" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DemoKeter/gg.graphketer" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DemoKeter/gg.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DemoKeter/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DemoKeter/o2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DemoKeter/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DemoKeter/sort" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DemoKeter/test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DemoKeter/un" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/authorization.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/authorization.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/createGraph.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/createGraph.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/rootLayout.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/rootLayout.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ru/ifmo/demoketer/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/ifmo/demoketer/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/demoketer.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/ifmo/demoketer/model/MainNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/ifmo/demoketer/model/MainNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/ifmo/demoketer/model/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/ifmo/demoketer/model/Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/ifmo/demoketer/view/ControllerAuthorization.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/ifmo/demoketer/view/ControllerGraphCreate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/ifmo/demoketer/view/ControllerGraphRun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/ifmo/demoketer/view/ControllerGraphRun.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/ifmo/demoketer/view/ControllerNodeRun.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/ifmo/demoketer/view/ControllerRoot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/runGraph.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/runGraph.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/runNode.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/runNode.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sample.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testO22.txt" beforeDir="false" afterPath="$PROJECT_DIR$/testO22.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testS22.txt" beforeDir="false" afterPath="$PROJECT_DIR$/testS22.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tghh.graphketer" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tt.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tt.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yyu.graphketer" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -34,43 +93,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ru/ifmo/demoketer/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="43" column="4" lean-forward="true" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="31" />
-              <folding>
-                <element signature="e#4817#4818#0" expanded="true" />
-                <element signature="e#4899#4900#0" expanded="true" />
-                <element signature="e#4972#4973#0" expanded="true" />
-                <element signature="e#9491#9492#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="4148">
+              <caret line="278" column="9" selection-start-line="278" selection-start-column="9" selection-end-line="278" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/ifmo/demoketer/view/ControllerAuthorization.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/ifmo/demoketer/view/GraphRunController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="52" column="43" lean-forward="true" selection-start-line="52" selection-start-column="43" selection-end-line="52" selection-end-column="43" />
+            <state relative-caret-position="3162">
+              <caret line="210" column="27" selection-start-line="210" selection-start-column="27" selection-end-line="210" selection-end-column="27" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#315#316#0" expanded="true" />
-                <element signature="e#347#348#0" expanded="true" />
-                <element signature="e#940#941#0" expanded="true" />
-                <element signature="e#986#987#0" expanded="true" />
-                <element signature="e#1022#1023#0" expanded="true" />
-                <element signature="e#1054#1055#0" expanded="true" />
+                <element signature="e#6132#6133#0" expanded="true" />
+                <element signature="e#6178#6179#0" expanded="true" />
+                <element signature="e#6214#6215#0" expanded="true" />
+                <element signature="e#6246#6247#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/ifmo/demoketer/view/ControllerNodeList.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/ifmo/demoketer/view/NodeListController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="14" selection-end-column="37" />
+            <state relative-caret-position="1054">
+              <caret line="65" selection-start-line="65" selection-end-line="65" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2304#2305#0" expanded="true" />
                 <element signature="e#2452#2453#0" expanded="true" />
                 <element signature="e#2482#2483#0" expanded="true" />
                 <element signature="e#2510#2511#0" expanded="true" />
@@ -81,50 +132,90 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/sample.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
+            <state relative-caret-position="510">
+              <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/ifmo/demoketer/view/GraphCreateController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="310">
+              <caret line="115" lean-forward="true" selection-start-line="115" selection-end-line="115" />
               <folding>
-                <element signature="n#configuration#0;n#plugin#0;n#plugins#0;n#build#0;n#project#0;n#!!top" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/rootLayout.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder" />
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/ifmo/demoketer/view/NodeRunController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
+            <state relative-caret-position="2618">
+              <caret line="175" column="19" selection-start-line="175" selection-start-column="19" selection-end-line="175" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/ifmo/demoketer/view/ControllerRoot.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/ifmo/demoketer/model/MainNode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="3111">
+              <caret line="235" column="13" selection-start-line="235" selection-start-column="13" selection-end-line="235" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3017#3018#0" expanded="true" />
+                <element signature="e#3066#3067#0" expanded="true" />
+                <element signature="e#3112#3113#0" expanded="true" />
+                <element signature="e#3160#3161#0" expanded="true" />
+                <element signature="e#3219#3220#0" expanded="true" />
+                <element signature="e#3261#3262#0" expanded="true" />
+                <element signature="e#3299#3300#0" expanded="true" />
+                <element signature="e#3339#3340#0" expanded="true" />
+                <element signature="e#3390#3391#0" expanded="true" />
+                <element signature="e#3424#3425#0" expanded="true" />
+                <element signature="e#3472#3473#0" expanded="true" />
+                <element signature="e#3515#3516#0" expanded="true" />
+                <element signature="e#3577#3578#0" expanded="true" />
+                <element signature="e#3634#3635#0" expanded="true" />
+                <element signature="e#3686#3687#0" expanded="true" />
+                <element signature="e#3733#3734#0" expanded="true" />
+                <element signature="e#3768#3769#0" expanded="true" />
+                <element signature="e#3805#3806#0" expanded="true" />
+                <element signature="e#3853#3854#0" expanded="true" />
+                <element signature="e#3884#3885#0" expanded="true" />
+                <element signature="e#3926#3927#0" expanded="true" />
+                <element signature="e#3970#3971#0" expanded="true" />
+                <element signature="e#4025#4026#0" expanded="true" />
+                <element signature="e#4063#4064#0" expanded="true" />
+                <element signature="e#4100#4101#0" expanded="true" />
+                <element signature="e#4139#4140#0" expanded="true" />
+                <element signature="e#4189#4190#0" expanded="true" />
+                <element signature="e#4222#4223#0" expanded="true" />
+                <element signature="e#4278#4279#0" expanded="true" />
+                <element signature="e#4323#4324#0" expanded="true" />
+                <element signature="e#4369#4370#0" expanded="true" />
+                <element signature="e#4409#4410#0" expanded="true" />
+                <element signature="e#4459#4460#0" expanded="true" />
+                <element signature="e#4504#4505#0" expanded="true" />
+                <element signature="e#4546#4547#0" expanded="true" />
+                <element signature="e#4584#4585#0" expanded="true" />
+                <element signature="e#4653#4654#0" expanded="true" />
+                <element signature="e#4685#4686#0" expanded="true" />
+                <element signature="e#4721#4722#0" expanded="true" />
+                <element signature="e#4759#4760#0" expanded="true" />
+                <element signature="e#4808#4809#0" expanded="true" />
+                <element signature="e#4840#4841#0" expanded="true" />
+                <element signature="e#4873#4874#0" expanded="true" />
+                <element signature="e#4904#4905#0" expanded="true" />
+              </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/createGraph.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3842">
-              <caret line="226" column="44" selection-start-line="226" selection-start-column="44" selection-end-line="226" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/runGraph.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder" />
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -141,9 +232,18 @@
     <findStrings>
       <find>nameNodeGr</find>
       <find>inputNodeR</find>
+      <find>nodeTableGr.getSelectionModel().getSelectedItem()</find>
+      <find>alertNotFNode</find>
+      <find>GridPane</find>
+      <find>selectInputParamNodeR</find>
+      <find>nodeInputParamR</find>
+      <find>gridNodeRun</find>
     </findStrings>
     <replaceStrings>
       <replace />
+      <replace>lableInputParam</replace>
+      <replace>graphInputParam</replace>
+      <replace>GridGraphRunDef</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -154,22 +254,26 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/resources/sample.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/ru/ifmo/demoketer/view/NodeInforationList.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/rootLayout.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/createGraph.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/ru/ifmo/demoketer/model/NodeInputValue.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/ifmo/demoketer/model/MainGraph.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/ifmo/demoketer/view/ControllerGraphCreate.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/ifmo/demoketer/view/ControllerGraphun.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/ifmo/demoketer/view/ControllerNodeList.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/ifmo/demoketer/model/MainNode.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/runNode.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/ru/ifmo/demoketer/view/ControllerNodeRun.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/ifmo/demoketer/view/ControllerGraphRun.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/ifmo/demoketer/view/ControllerRoot.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/ifmo/demoketer/view/ControllerAuthorization.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/rootLayout.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/ifmo/demoketer/view/ControllerGraphCreate.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/runNode.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/ifmo/demoketer/model/Node.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/ifmo/demoketer/model/MainNode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/ifmo/demoketer/view/GraphRunController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/authorization.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/ru/ifmo/demoketer/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/ifmo/demoketer/view/ControllerAuthorization.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/ifmo/demoketer/view/NodeRunController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/ifmo/demoketer/view/GraphCreateController.java" />
       </list>
     </option>
   </component>
@@ -184,8 +288,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -248,12 +350,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560889746562" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561309255593" />
     <property name="last_opened_file_path" value="C:/Program Files/SceneBuilder/SceneBuilder.exe" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -335,18 +439,23 @@
       <workItem from="1560783042697" duration="419000" />
       <workItem from="1560783540276" duration="228000" />
       <workItem from="1560784554185" duration="103000" />
-      <workItem from="1560887382330" duration="2158000" />
+      <workItem from="1560887382330" duration="2907000" />
+      <workItem from="1560978966297" duration="499000" />
+      <workItem from="1561054557384" duration="2289000" />
+      <workItem from="1561199703842" duration="10327000" />
+      <workItem from="1561283823690" duration="19107000" />
+      <workItem from="1561309351046" duration="30000" />
+      <workItem from="1561310682115" duration="67000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48490000" />
+    <option name="totallyTimeSpent" value="81558000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27986577" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2342282" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -357,7 +466,7 @@
       <window_info anchor="bottom" id="Messages" order="0" weight="0.3286119" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.33427763" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.33427763" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -387,30 +496,52 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ru/ifmo/demoketer/view/ControllerGraphRun.java</url>
-          <line>204</line>
+          <url>file://$PROJECT_DIR$/src/main/java/ru/ifmo/demoketer/view/GraphRunController.java</url>
+          <line>211</line>
           <properties />
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ru/ifmo/demoketer/view/ControllerNodeRun.java</url>
-          <line>136</line>
+          <url>file://$PROJECT_DIR$/src/main/java/ru/ifmo/demoketer/view/GraphCreateController.java</url>
+          <line>254</line>
           <properties />
-          <option name="timeStamp" value="17" />
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/ifmo/demoketer/view/NodeRunController.java</url>
+          <line>184</line>
+          <properties />
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/ifmo/demoketer/view/GraphRunController.java</url>
+          <line>150</line>
+          <properties />
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/ifmo/demoketer/view/NodeRunController.java</url>
+          <line>100</line>
+          <properties />
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/ifmo/demoketer/view/NodeRunController.java</url>
+          <line>90</line>
+          <properties />
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/ifmo/demoketer/view/GraphCreateController.java</url>
+          <line>246</line>
+          <properties />
+          <option name="timeStamp" value="42" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/ifmo/demoketer/view/NodeInforationList.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/sample.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://Y:/Program Files/Java/jdk1.8.0_211/javafx-src.zip!/javafx/beans/binding/ObjectExpression.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -477,68 +608,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/ifmo/demoketer/model/NodeInputValue.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/ifmo/demoketer/model/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://Y:/Program Files/Java/jdk1.8.0_211/src.zip!/java/io/FileInputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="59" selection-start-line="59" selection-end-line="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/ifmo/demoketer/model/MainNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="35" column="90" selection-start-line="35" selection-start-column="86" selection-end-line="35" selection-end-column="90" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2911#2912#0" expanded="true" />
-            <element signature="e#2956#2957#0" expanded="true" />
-            <element signature="e#2997#2998#0" expanded="true" />
-            <element signature="e#3037#3038#0" expanded="true" />
-            <element signature="e#3093#3094#0" expanded="true" />
-            <element signature="e#3131#3132#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://Y:/Program Files/Java/jdk1.8.0_211/javafx-src.zip!/javafx/fxml/FXMLLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="2569" selection-start-line="2569" selection-end-line="2569" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/runNode.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="221" column="16" lean-forward="true" selection-start-line="221" selection-start-column="16" selection-end-line="221" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/ifmo/demoketer/view/ControllerGraphCreate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1547">
-          <caret line="115" selection-start-line="115" selection-end-line="121" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/ifmo/demoketer/view/ControllerNodeRun.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2074">
-          <caret line="140" column="12" selection-start-line="140" selection-start-column="12" selection-end-line="140" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/ifmo/demoketer/model/MainGraph.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -549,29 +618,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/rootLayout.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/createGraph.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3842">
-          <caret line="226" column="44" selection-start-line="226" selection-start-column="44" selection-end-line="226" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/runGraph.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
+        <state relative-caret-position="442">
           <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
           <folding>
             <element signature="n#configuration#0;n#plugin#0;n#plugins#0;n#build#0;n#project#0;n#!!top" />
@@ -579,27 +628,264 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/ifmo/demoketer/view/ControllerRoot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/authorization.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/ifmo/demoketer/view/RootController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/ifmo/demoketer/view/ControllerNodeList.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/ifmo/demoketer/view/AuthorizationController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="14" selection-end-column="37" />
+        <state relative-caret-position="167">
+          <caret line="47" column="44" selection-start-line="47" selection-start-column="39" selection-end-line="47" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/rootLayout.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="jar://Y:/Program Files/Java/jdk1.8.0_211/jre/lib/rt.jar!/sun/net/www/protocol/file/Handler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://Y:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/System.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="333" selection-start-line="333" selection-end-line="333" />
+          <folding>
+            <element signature="e#11597#11598#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://Y:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://Y:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="659" selection-start-line="659" selection-end-line="659" />
+          <folding>
+            <element signature="e#22786#22787#0" expanded="true" />
+            <element signature="e#22821#22822#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://Y:/Program Files/Java/jdk1.8.0_211/src.zip!/java/io/WinNTFileSystem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="85" selection-start-line="85" selection-end-line="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://Y:/Program Files/Java/jdk1.8.0_211/src.zip!/java/io/File.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="278" selection-start-line="278" selection-end-line="278" />
+          <folding>
+            <element signature="e#21135#21136#0" expanded="true" />
+            <element signature="e#21162#21163#0" expanded="true" />
+            <element signature="e#91558#91559#0" expanded="true" />
+            <element signature="e#91590#91591#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://Y:/Program Files/Java/jdk1.8.0_211/src.zip!/java/io/FileInputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="92" selection-start-line="92" selection-end-line="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://Y:/Program Files/Java/jdk1.8.0_211/jre/lib/rt.jar!/sun/net/www/protocol/file/FileURLConnection.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="154" selection-start-line="154" selection-end-line="154" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://Y:/Program Files/Java/jdk1.8.0_211/src.zip!/java/net/URL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="1044" selection-start-line="1044" selection-end-line="1044" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://Y:/Program Files/Java/jdk1.8.0_211/javafx-src.zip!/javafx/scene/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="8411" selection-start-line="8411" selection-end-line="8411" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://Y:/Program Files/Java/jdk1.8.0_211/javafx-src.zip!/javafx/scene/control/Button.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="186" selection-start-line="186" selection-end-line="186" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://Y:/Program Files/Java/jdk1.8.0_211/javafx-src.zip!/javafx/event/Event.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="197" selection-start-line="197" selection-end-line="197" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://Y:/Program Files/Java/jdk1.8.0_211/javafx-src.zip!/javafx/scene/Scene.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="2494" selection-start-line="2494" selection-end-line="2494" />
+          <folding>
+            <element signature="e#66572#66573#0" expanded="true" />
+            <element signature="e#66618#66619#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://Y:/Program Files/Java/jdk1.8.0_211/javafx-src.zip!/javafx/beans/property/ReadOnlyObjectPropertyBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="74" selection-start-line="74" selection-end-line="74" />
+          <folding>
+            <element signature="e#1722#1723#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://Y:/Program Files/Java/jdk1.8.0_211/javafx-src.zip!/javafx/scene/layout/GridPane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3445">
+          <caret line="751" column="35" selection-start-line="751" selection-start-column="27" selection-end-line="751" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/ifmo/demoketer/model/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://Y:/Program Files/Java/jdk1.8.0_211/javafx-src.zip!/javafx/beans/property/StringPropertyBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="129" selection-start-line="129" selection-end-line="129" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://Y:/Program Files/Java/jdk1.8.0_211/javafx-src.zip!/javafx/scene/control/TreeItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="644" selection-start-line="644" selection-end-line="644" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://Y:/Program Files/Java/jdk1.8.0_211/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="434" selection-start-line="434" selection-end-line="434" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://Y:/Program Files/Java/jdk1.8.0_211/javafx-src.zip!/javafx/fxml/FXMLLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="1772" selection-start-line="1772" selection-end-line="1772" />
+          <folding>
+            <element signature="e#66921#66922#0" expanded="true" />
+            <element signature="e#66966#66967#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://Y:/Program Files/Java/jdk1.8.0_211/javafx-src.zip!/com/sun/javafx/collections/ObservableListWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="88" selection-start-line="88" selection-end-line="88" />
+          <folding>
+            <element signature="e#2227#2228#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/runGraph.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="83" lean-forward="true" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="83" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/runNode.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1309">
+          <caret line="77" column="77" selection-start-line="77" selection-start-column="77" selection-end-line="77" selection-end-column="77" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/authorization.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="46" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/createGraph.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3650">
+          <caret line="224" column="44" selection-start-line="224" selection-start-column="44" selection-end-line="224" selection-end-column="44" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/ifmo/demoketer/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4148">
+          <caret line="278" column="9" selection-start-line="278" selection-start-column="9" selection-end-line="278" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/ifmo/demoketer/view/GraphRunController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3162">
+          <caret line="210" column="27" selection-start-line="210" selection-start-column="27" selection-end-line="210" selection-end-column="27" />
+          <folding>
+            <element signature="e#6132#6133#0" expanded="true" />
+            <element signature="e#6178#6179#0" expanded="true" />
+            <element signature="e#6214#6215#0" expanded="true" />
+            <element signature="e#6246#6247#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/ifmo/demoketer/view/NodeListController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1054">
+          <caret line="65" selection-start-line="65" selection-end-line="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2304#2305#0" expanded="true" />
             <element signature="e#2452#2453#0" expanded="true" />
             <element signature="e#2482#2483#0" expanded="true" />
             <element signature="e#2510#2511#0" expanded="true" />
@@ -608,44 +894,81 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/ifmo/demoketer/view/ControllerGraphRun.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/sample.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-322">
-          <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
-          <folding>
-            <element signature="e#5891#5892#0" expanded="true" />
-            <element signature="e#5937#5938#0" expanded="true" />
-            <element signature="e#5973#5974#0" expanded="true" />
-            <element signature="e#6005#6006#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="510">
+          <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/ifmo/demoketer/view/NodeRunController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2618">
+          <caret line="175" column="19" selection-start-line="175" selection-start-column="19" selection-end-line="175" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/ifmo/demoketer/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/ifmo/demoketer/model/MainNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="43" column="4" lean-forward="true" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="31" />
-          <folding>
-            <element signature="e#4817#4818#0" expanded="true" />
-            <element signature="e#4899#4900#0" expanded="true" />
-            <element signature="e#4972#4973#0" expanded="true" />
-            <element signature="e#9491#9492#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/ifmo/demoketer/view/ControllerAuthorization.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="52" column="43" lean-forward="true" selection-start-line="52" selection-start-column="43" selection-end-line="52" selection-end-column="43" />
+        <state relative-caret-position="3111">
+          <caret line="235" column="13" selection-start-line="235" selection-start-column="13" selection-end-line="235" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#315#316#0" expanded="true" />
-            <element signature="e#347#348#0" expanded="true" />
-            <element signature="e#940#941#0" expanded="true" />
-            <element signature="e#986#987#0" expanded="true" />
-            <element signature="e#1022#1023#0" expanded="true" />
-            <element signature="e#1054#1055#0" expanded="true" />
+            <element signature="e#3017#3018#0" expanded="true" />
+            <element signature="e#3066#3067#0" expanded="true" />
+            <element signature="e#3112#3113#0" expanded="true" />
+            <element signature="e#3160#3161#0" expanded="true" />
+            <element signature="e#3219#3220#0" expanded="true" />
+            <element signature="e#3261#3262#0" expanded="true" />
+            <element signature="e#3299#3300#0" expanded="true" />
+            <element signature="e#3339#3340#0" expanded="true" />
+            <element signature="e#3390#3391#0" expanded="true" />
+            <element signature="e#3424#3425#0" expanded="true" />
+            <element signature="e#3472#3473#0" expanded="true" />
+            <element signature="e#3515#3516#0" expanded="true" />
+            <element signature="e#3577#3578#0" expanded="true" />
+            <element signature="e#3634#3635#0" expanded="true" />
+            <element signature="e#3686#3687#0" expanded="true" />
+            <element signature="e#3733#3734#0" expanded="true" />
+            <element signature="e#3768#3769#0" expanded="true" />
+            <element signature="e#3805#3806#0" expanded="true" />
+            <element signature="e#3853#3854#0" expanded="true" />
+            <element signature="e#3884#3885#0" expanded="true" />
+            <element signature="e#3926#3927#0" expanded="true" />
+            <element signature="e#3970#3971#0" expanded="true" />
+            <element signature="e#4025#4026#0" expanded="true" />
+            <element signature="e#4063#4064#0" expanded="true" />
+            <element signature="e#4100#4101#0" expanded="true" />
+            <element signature="e#4139#4140#0" expanded="true" />
+            <element signature="e#4189#4190#0" expanded="true" />
+            <element signature="e#4222#4223#0" expanded="true" />
+            <element signature="e#4278#4279#0" expanded="true" />
+            <element signature="e#4323#4324#0" expanded="true" />
+            <element signature="e#4369#4370#0" expanded="true" />
+            <element signature="e#4409#4410#0" expanded="true" />
+            <element signature="e#4459#4460#0" expanded="true" />
+            <element signature="e#4504#4505#0" expanded="true" />
+            <element signature="e#4546#4547#0" expanded="true" />
+            <element signature="e#4584#4585#0" expanded="true" />
+            <element signature="e#4653#4654#0" expanded="true" />
+            <element signature="e#4685#4686#0" expanded="true" />
+            <element signature="e#4721#4722#0" expanded="true" />
+            <element signature="e#4759#4760#0" expanded="true" />
+            <element signature="e#4808#4809#0" expanded="true" />
+            <element signature="e#4840#4841#0" expanded="true" />
+            <element signature="e#4873#4874#0" expanded="true" />
+            <element signature="e#4904#4905#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/ifmo/demoketer/view/GraphCreateController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="115" lean-forward="true" selection-start-line="115" selection-end-line="115" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
